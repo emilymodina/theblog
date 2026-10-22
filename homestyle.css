@@ -1,0 +1,77 @@
+/* FONTS */
+
+@font-face{
+    font-family: KarlaRegular;
+    src: url(fonts/Karla-Regular.ttf)
+}
+
+@font-face{
+    font-family: GarfieldSans;
+    src: url(fonts/GarfieldSans.ttf)
+}
+
+body{
+    background-color: white
+}
+
+/* NAVIGATION */
+
+.navigation{
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+.logo{
+    margin-left: 60px;
+    margin-right: auto;
+    max-width: 20vh;
+}
+
+.nav-links{
+    display: flex;
+    gap: 80px;
+    margin-right: 50px;
+    margin-left: auto;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-family: KarlaRegular;
+}
+
+/* BANNER IMAGE */
+
+.banner{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    margin-top: 12%;
+    margin-bottom: auto;
+}
+
+/* TEXT */
+
+h1{
+    font-family: GarfieldSans;
+    font-size: 80px;
+    margin-left: 100px;
+}
+
+h2{
+    font-family: KarlaRegular;
+    margin-left: 100px;
+}
+
+h3 a{
+    font-family: KarlaRegular;
+    margin-left: 100px;
+    text-decoration: none;
+    color: black;
+}

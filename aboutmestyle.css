@@ -1,0 +1,92 @@
+/* FONTS */
+
+@font-face{
+    font-family: KarlaRegular;
+    src: url(fonts/Karla-Regular.ttf)
+}
+
+@font-face{
+    font-family: KarlaBold;
+    src: url(fonts/Karla-Bold.ttf)
+}
+
+@font-face{
+    font-family: GarfieldSans;
+    src: url(fonts/GarfieldSans.ttf)
+}
+
+/* NAVIGATION */
+
+.navigation{
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+.logo{
+    margin-left: 60px;
+    margin-right: auto;
+    max-width: 20vh;
+}
+
+.nav-links{
+    display: flex;
+    gap: 80px;
+    margin-right: 50px;
+    margin-left: auto;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-family: KarlaRegular;
+}
+
+/* ABOUT ME */
+
+.about-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+}
+
+/* LEFT HALF OF GRID */
+
+.photo-side {
+    padding: 70px 80px;
+}
+
+.about-img {
+    width: 100%;
+    height: auto;
+}
+
+/* RIGHT HALF OF GRID */
+
+.text-side {
+    background-color: #1570AC;
+    padding: 80px 100px;
+}
+
+.text-side h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 50px;
+    font-family: KarlaBold;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    font-family: GarfieldSans;
+}
+
+.text-side p {
+    margin-bottom: 40px;
+    font-family: KarlaRegular;
+}

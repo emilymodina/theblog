@@ -1,0 +1,114 @@
+/* FONTS */
+
+@font-face{
+    font-family: KarlaRegular;
+    src: url(fonts/Karla-Regular.ttf)
+}
+
+@font-face{
+    font-family: KarlaBold;
+    src: url(fonts/Karla-Bold.ttf)
+}
+
+@font-face{
+    font-family: GarfieldSans;
+    src: url(fonts/GarfieldSans.ttf)
+}
+
+/* NAVIGATION */
+
+.navigation{
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+.logo{
+    margin-left: 60px;
+    margin-right: auto;
+    max-width: 20vh;
+}
+
+.nav-links{
+    display: flex;
+    gap: 80px;
+    margin-right: 50px;
+    margin-left: auto;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-family: KarlaRegular;
+}
+
+/* ACCOUNT */
+
+.account-page {
+    padding: 50px 75px;
+}
+
+.account-page h1 {
+    font-family: KarlaBold;
+    font-size: 48px;
+    margin: 0 0 40px;
+}
+
+/* 2 COLUMN GRID */
+.account-content {
+    display: grid;
+    grid-template-columns: 250px 500px;
+    column-gap: 45px;
+    align-items: start;
+}
+
+/* LEFT SIDE GRID */
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.profile h2 {
+    font-family: GarfieldSans;
+    margin: 15px 0 0;
+}
+
+.profile p {
+    font-family: KarlaRegular;
+    margin: 0;
+}
+
+/* RIGHT SIDE GRID */
+
+.details-box {
+    background-color: #1570AC;
+    padding: 20px;
+    min-height: 210px;
+}
+
+.details-box p {
+    font-family: KarlaRegular;
+    margin: 0 0 10px;
+}
+
+/* CART BUTTON */
+
+.cart-btn {
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+    z-index: 100;
+    padding: 12px 55px;
+    background-color: #F06B04;
+    color: black;
+    text-decoration: none;
+    font-family: KarlaBold;
+}

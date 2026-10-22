@@ -1,0 +1,136 @@
+/* FONTS */
+
+@font-face{
+    font-family: KarlaRegular;
+    src: url(fonts/Karla-Regular.ttf)
+}
+
+@font-face{
+    font-family: KarlaBold;
+    src: url(fonts/Karla-Bold.ttf)
+}
+
+@font-face{
+    font-family: GarfieldSans;
+    src: url(fonts/GarfieldSans.ttf)
+}
+
+/* NAVIGATION */
+
+.navigation{
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+.logo{
+    margin-left: 60px;
+    margin-right: auto;
+    max-width: 20vh;
+}
+
+.nav-links{
+    display: flex;
+    gap: 80px;
+    margin-right: 50px;
+    margin-left: auto;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-family: KarlaRegular;
+}
+
+/* NAVIGATION 2 */
+
+.navigation2{
+    display: flex;
+    position: relative;
+    background-color: white;
+    border-bottom: 1px solid gray;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.nav-links2{
+    display: flex;
+    gap: 80px;
+    margin-left: 90px;
+    margin-right: auto;
+}
+
+.nav-link2{
+    text-decoration: none;
+    color: black;
+    font-family: KarlaRegular;
+}
+
+.nav-cart{
+    margin-right: 90px;
+    margin-left: auto;
+}
+
+.nav-cart1{
+    text-decoration: none;
+    color: black;
+    font-family: GarfieldSans;
+}
+
+/* EVERYTHING ELSE */
+
+.headline{
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1{
+    font-size: 48px;
+    font-family: KarlaBold;
+}
+
+h2{
+    font-family: KarlaRegular;
+}
+
+h3{
+    font-family: GarfieldSans;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+h4{
+    font-family: KarlaRegular;
+}
+
+.grid{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 100px;
+    grid-auto-flow: row;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+/* CART BUTTON */
+
+.cart-btn {
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+    z-index: 100;
+    padding: 12px 55px;
+    background-color: #F06B04;
+    color: black;
+    text-decoration: none;
+    font-family: KarlaBold;
+}
