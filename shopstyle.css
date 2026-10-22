@@ -115,10 +115,8 @@ h4{
     place-items: center;
     min-height: 100vh;
     grid-template-columns: repeat(3,1fr);
-    grid-column-gap: 100px;
+    grid-column-gap: 1px;
     grid-auto-flow: row;
-    margin-left: 300px;
-    margin-right: 300px;
 }
 
 /* CART BUTTON */
