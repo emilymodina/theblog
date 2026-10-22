@@ -45,6 +45,11 @@
     text-decoration: none;
     color: white;
     font-family: KarlaRegular;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover{
+    color: #A1091E;
 }
 
 /* NAVIGATION 2 */
@@ -81,6 +86,11 @@
     text-decoration: none;
     color: black;
     font-family: GarfieldSans;
+    transition: color 0.2s ease;
+}
+
+.nav-cart1:hover{
+    color: #F06B04;
 }
 
 /* EVERYTHING ELSE */

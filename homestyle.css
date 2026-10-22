@@ -44,6 +44,11 @@ body{
     text-decoration: none;
     color: white;
     font-family: KarlaRegular;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover{
+    color: #A1091E;
 }
 
 /* BANNER IMAGE */
@@ -72,6 +77,6 @@ h2{
 h3 a{
     font-family: KarlaRegular;
     margin-left: 100px;
-    text-decoration: none;
+    text-decoration: underline;
     color: black;
 }

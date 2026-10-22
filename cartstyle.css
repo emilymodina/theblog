@@ -40,6 +40,11 @@
     text-decoration: none;
     color: white;
     font-family: KarlaRegular;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover{
+    color: #A1091E;
 }
 
 /* CART */
