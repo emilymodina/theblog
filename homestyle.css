@@ -64,18 +64,20 @@ body{
 
 h1{
     font-family: GarfieldSans;
-    font-size: 80px;
-    margin-left: 100px;
+    font-size: 4.2vw;
+    margin-left: 5.2vw;
 }
 
 h2{
     font-family: KarlaRegular;
-    margin-left: 100px;
+    font-size: max(15px, 1.25vw);
+    margin-left: 5.2vw;
 }
 
 h3 a{
     font-family: KarlaRegular;
-    margin-left: 100px;
+    font-size: max(14px, 1vw);
+    margin-left: 5.2vw;
     text-decoration: underline;
     color: black;
 }
@@ -85,7 +87,7 @@ h3 a{
 #minigarfield{
     position: fixed;
     z-index: -1;
-    top: 22.3vw;
+    top: 25.3vw;
     right: 19%;
     max-height: 39.6vw;
 }
@@ -93,7 +95,7 @@ h3 a{
 #hugegarfield{
     position: fixed;
     z-index: -2;
-    top: 3.4vw;
+    top: 6.4vw;
     right: 2.5%;
     max-height: 59.4vw;
 }
@@ -101,7 +103,7 @@ h3 a{
 #redsticker{
     position: fixed;
     z-index: -3;
-    top: 6vw;
+    top: 9vw;
     right: 45%;
     max-height: 14.3vw;
 }
@@ -109,7 +111,7 @@ h3 a{
 #popcorngarfield{
     position: fixed;
     z-index: -4;
-    top: 2.5vw;
+    top: 5.5vw;
     right: 33%;
     max-height: 12.4vw;
 }
@@ -117,7 +119,7 @@ h3 a{
 #comicstrip{
     position: fixed;
     z-index: -5;
-    top: 2.5vw;
+    top: 3.5vw;
     right: 3%;
     max-height: 64.3vw;
 }
