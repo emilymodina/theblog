@@ -127,7 +127,7 @@
 #book{
     position: fixed;
     z-index: -2;
-    top: 32.7vw;
+    top: 30.7vw;
     right: 15%;
     max-height: 19.8vw;
 }
@@ -135,7 +135,7 @@
 #website{
     position: fixed;
     z-index: -2;
-    top: 29.2vw;
+    top: 27.2vw;
     right: 22%;
     max-height: 4.9vw;
 }
@@ -143,7 +143,7 @@
 #books{
     position: fixed;
     z-index: -3;
-    top: 15.4vw;
+    top: 13.4vw;
     right: -5%;
     max-height: 29.7vw;
 }
@@ -151,7 +151,7 @@
 #red{
     position: fixed;
     z-index: -4;
-    top: 5.5vw;
+    top: 2.5vw;
     right: 23%;
     max-height: 19.8vw;
 }
@@ -159,7 +159,7 @@
 #paper1{
     position: fixed;
     z-index: -5;
-    bottom: -9.4vw;
+    bottom: -7.4vw;
     right: 25%;
     max-height: 19.8vw;
 }
