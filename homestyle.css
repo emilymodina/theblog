@@ -85,39 +85,39 @@ h3 a{
 #minigarfield{
     position: fixed;
     z-index: -1;
-    top: 45%;
+    top: 22.3vw;
     right: 19%;
-    max-height: 80vh;
+    max-height: 39.6vw;
 }
 
 #hugegarfield{
     position: fixed;
     z-index: -2;
-    top: 7%;
+    top: 3.4vw;
     right: 2.5%;
-    max-height: 120vh;
+    max-height: 59.4vw;
 }
 
 #redsticker{
     position: fixed;
     z-index: -3;
-    top: 12%;
+    top: 6vw;
     right: 45%;
-    max-height: 29vh;
+    max-height: 14.3vw;
 }
 
 #popcorngarfield{
     position: fixed;
     z-index: -4;
-    top: 5%;
+    top: 2.5vw;
     right: 33%;
-    max-height: 25vh;
+    max-height: 12.4vw;
 }
 
 #comicstrip{
     position: fixed;
     z-index: -5;
-    top: 5%;
+    top: 2.5vw;
     right: 3%;
-    max-height: 130vh;
+    max-height: 64.3vw;
 }

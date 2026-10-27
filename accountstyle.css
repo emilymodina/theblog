@@ -124,39 +124,39 @@
 #book{
     position: fixed;
     z-index: -2;
-    top: 60%;
+    top: 29.7vw;
     right: 13%;
-    max-height: 40vh;
+    max-height: 19.8vw;
 }
 
 #website{
     position: fixed;
     z-index: -2;
-    top: 53%;
+    top: 26.2vw;
     right: 20%;
-    max-height: 10vh;
+    max-height: 4.9vw;
 }
 
 #books{
     position: fixed;
     z-index: -3;
-    top: 25%;
+    top: 12.4vw;
     right: -5%;
-    max-height: 60vh;
+    max-height: 29.7vw;
 }
 
 #red{
     position: fixed;
     z-index: -4;
-    top: 9%;
+    top: 4.5vw;
     right: 23%;
-    max-height: 40vh;
+    max-height: 19.8vw;
 }
 
 #paper1{
     position: fixed;
     z-index: -5;
-    bottom: -17%;
+    bottom: -8.4vw;
     right: 25%;
-    max-height: 40vh;
+    max-height: 19.8vw;
 }
