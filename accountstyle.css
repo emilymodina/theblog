@@ -118,3 +118,45 @@
     text-decoration: none;
     font-family: KarlaBold;
 }
+
+/* IMAGES */
+
+#book{
+    position: fixed;
+    z-index: -2;
+    top: 60%;
+    right: 13%;
+    max-height: 40vh;
+}
+
+#website{
+    position: fixed;
+    z-index: -2;
+    top: 53%;
+    right: 20%;
+    max-height: 10vh;
+}
+
+#books{
+    position: fixed;
+    z-index: -3;
+    top: 25%;
+    right: -5%;
+    max-height: 60vh;
+}
+
+#red{
+    position: fixed;
+    z-index: -4;
+    top: 9%;
+    right: 23%;
+    max-height: 40vh;
+}
+
+#paper1{
+    position: fixed;
+    z-index: -5;
+    bottom: -17%;
+    right: 25%;
+    max-height: 40vh;
+}

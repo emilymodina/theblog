@@ -55,7 +55,6 @@ body{
 
 .banner{
     display: flex;
-    background-color: white;
     flex-direction: column;
     margin-top: 12%;
     margin-bottom: auto;
@@ -79,4 +78,46 @@ h3 a{
     margin-left: 100px;
     text-decoration: underline;
     color: black;
+}
+
+/* IMGS */
+
+#minigarfield{
+    position: fixed;
+    z-index: -1;
+    top: 45%;
+    right: 19%;
+    max-height: 80vh;
+}
+
+#hugegarfield{
+    position: fixed;
+    z-index: -2;
+    top: 7%;
+    right: 2.5%;
+    max-height: 120vh;
+}
+
+#redsticker{
+    position: fixed;
+    z-index: -3;
+    top: 12%;
+    right: 45%;
+    max-height: 29vh;
+}
+
+#popcorngarfield{
+    position: fixed;
+    z-index: -4;
+    top: 5%;
+    right: 33%;
+    max-height: 25vh;
+}
+
+#comicstrip{
+    position: fixed;
+    z-index: -5;
+    top: 5%;
+    right: 3%;
+    max-height: 130vh;
 }

@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="shopstyle.css">
     </head>
     <body>
+        <script src="shopjava.js"></script>
 
        <!-- NAVIGATION -->
         <section class="navigation">
@@ -25,9 +26,9 @@
         <section class="navigation2">
             
              <div class="nav-links2">
-                <a class="nav-link2">Filter by Price</a>
-                <a class="nav-link2">Filter by Year</a>
-                <a class="nav-link2">Filter by Star Rating</a>
+                <a class="nav-link2" onclick="sortItems('price')">Filter by Price</a>
+                <a class="nav-link2" onclick="sortItems('year')">Filter by Year</a>
+                <a class="nav-link2" onclick="sortItems('rating')">Filter by Star Rating</a>
             </div>
 
             <div class="nav-cart">
@@ -41,7 +42,7 @@
         <div class="headline">
             <h1>Garfield Plushies</h1>
             <br>
-            <h2>Filtered by Date Collected</h2>
+            <h2><span id="filter-text">Filtered by Date Collected</span> <span id="reset-x" onclick="resetFilter()">✖</span></h2>
         </div>
         <br>
         <br>
@@ -49,38 +50,116 @@
 
         <!-- SHOP GRID -->
         <div class="grid">
-            <div class="item1">
-                <img src="img/img.png">
+            <div class="item item1" data-order="1" data-price="8" data-year="1981" data-rating="2">
+                <div class="img-hover" tabindex="0">
+                    <img src="img/widegarfield.png" class="png">
+                    <img src="img/widegarfield.gif" class="gif">
+                    <img src="img/blue1.png" class="blue">
+
+                    <div class="info-box">
+                        <h3>Rounded Sitting Garfield</h3>
+                        <p><strong>Dimensions:</strong> 6” x 5” x 6”</p>
+                        <p><strong>Material:</strong> Polyester</p>
+                        <p><strong>Condition:</strong> Fairly new</p>
+                        <p>I got this big guy off Etsy from my favorite seller. He was definitely built a little different from everybody else, and could probably end up as a large dog toy for how durable he is. Sorry, Odie.</p>
+                    </div>
+
+                </div>
                 <h3>Rounded Sitting Garfield</h3>
                 <h4>★★☆☆☆<br>$8.00 USD</h4>
             </div>
 
-            <div class="item2">
-                <img src="img/img.png">
+            <div class="item item2" data-order="2" data-price="10" data-year="1980" data-rating="5">
+                <div class="img-hover" tabindex="0">
+                    <img src="img/heartgarfield.png" class="png">
+                    <img src="img/heartgarfield.gif" class="gif">
+                    <img src="img/blue2.png" class="blue">
+
+                    <div class="info-box">
+                        <h3>Heart Garfield</h3>
+                        <p><strong>Dimensions:</strong> 3” x 4.5” x 5”</p>
+                        <p><strong>Material:</strong> Polyester, Plastic, Nylon</p>
+                        <p><strong>Condition:</strong> Good</p>
+                        <p>My absolute favorite plush so far, of course from my favorite seller on Etsy. Extremely cute, portable, but shows some wear in the eyes. Still looks silly to me, though!</p>
+                    </div>
+
+                </div>
                 <h3>Heart Garfield</h3>
                 <h4>★★★★★<br>$10.00 USD</h4>
             </div>
 
-            <div class="item3">
-                <img src="img/img.png">
+            <div class="item item3" data-order="3" data-price="20" data-year="1981" data-rating="4">
+                <div class="img-hover" tabindex="0">
+                    <img src="img/tallgarfield.png" class="png">
+                    <img src="img/tallgarfield.gif" class="gif">
+                    <img src="img/blue3.png" class="blue">
+
+                    <div class="info-box">
+                        <h3>9.5-inch Sitting Garfield</h3>
+                        <p><strong>Dimensions:</strong> 7.5” x 5” x 9.5”</p>
+                        <p><strong>Material:</strong> Polyester, Plastic</p>
+                        <p><strong>Condition:</strong> Fair</p>
+                        <p>Another one bought from my favorite Etsy seller. He's my biggest plush so far, and sits very well compared to my smaller ones. Unfortunately, most of his orange has faded from sun exposure.</p>
+                    </div>
+
+                </div>
                 <h3>9.5-inch Sitting Garfield</h3>
                 <h4>★★★★☆<br>$20.00 USD</h4>
             </div>
 
-            <div class="item4">
-                <img src="img/img.png">
+            <div class="item item4" data-order="4" data-price="20" data-year="1981" data-rating="5">
+                <div class="img-hover" tabindex="0">
+                    <img src="img/smallgarfield.png" class="png">
+                    <img src="img/smallgarfield.gif" class="gif">
+                    <img src="img/blue4.png" class="blue">
+
+                    <div class="info-box">
+                        <h3>5-inch Sitting Garfield</h3>
+                        <p><strong>Dimensions:</strong> 3.5” x 4.5” x 5”</p>
+                        <p><strong>Material:</strong> Polyester, Plastic</p>
+                        <p><strong>Condition:</strong> Fairly new</p>
+                        <p>My first purchase from my favorite Etsy seller, this one's my first plush from 1981. Everything's in good condition, the orange has just faded a tiny bit from the sun. Other than that, he's pretty awesome.</p>
+                    </div>
+
+                </div>
                 <h3>5-inch Sitting Garfield</h3>
                 <h4>★★★★★<br>$20.00 USD</h4>
             </div>
 
-            <div class="item5">
-                <img src="img/img.png">
+            <div class="item item5" data-order="5" data-price="45" data-year="1990" data-rating="4">
+                <div class="img-hover" tabindex="0">
+                    <img src="img/boxergarfield.png" class="png">
+                    <img src="img/boxergarfield.gif" class="gif">
+                    <img src="img/blue5.png" class="blue">
+
+                    <div class="info-box">
+                        <h3>Red Heart Boxers Garfield</h3>
+                        <p><strong>Dimensions:</strong> 4.5” x 4.5” x 7”</p>
+                        <p><strong>Material:</strong> Polyester, Nylon</p>
+                        <p><strong>Condition:</strong> Fairly new</p>
+                        <p>This guy was actually gifted to me for my birthday! He was collected from Blue Bin Vintage on Haight. No blemishes because he's been taken well care of before me, and the tag is still intact!</p>
+                    </div>
+
+                </div>
                 <h3>Red Heart Boxers Garfield</h3>
                 <h4>★★★★☆<br>$45.00 USD</h4>
             </div>
 
-            <div class="item6">
-                <img src="img/img.png">
+            <div class="item item6" data-order="6" data-price="0" data-year="1999" data-rating="3">
+                <div class="img-hover" tabindex="0">
+                    <img src="img/standinggarfield.png" class="png">
+                    <img src="img/standinggarfield.gif" class="gif">
+                    <img src="img/blue6.png" class="blue">
+
+                    <div class="info-box">
+                        <h3>7-inch Standing Garfield</h3>
+                        <p><strong>Dimensions:</strong> 4.5” x 4” x 7”</p>
+                        <p><strong>Material:</strong> Polyester, Nylon</p>
+                        <p><strong>Condition:</strong> Fairly new</p>
+                        <p>This was my first ever Garfield plush! He came from my mom's childhood home when we were helping my grandma move out. I found him in a pile of old plushies and decided to keep him. Past me knew what's up.</p>
+                    </div>
+
+                </div>
                 <h3>7-inch Standing Garfield</h3>
                 <h4>★★★☆☆<br>FREE</h4>
             </div>
