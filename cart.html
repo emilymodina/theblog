@@ -24,6 +24,14 @@
             </div>
         </section>
 
+        <!-- IMGS -->
+         <img id="slapsilly" src="img/slapsilly.jpg">
+         <img id="sleepypookie" src="img/sleepypookie.jpg">
+         <img id="donut" src="img/donut.png">
+         <img id="paper2" src="img/paper2.png">
+         <img id="hatemondays" src="img/hatemondays.jpg">
+         <img id="lasagna" src="img/lasagna.png">
+
         <!-- CART -->
 
         <div class="cart-page">
@@ -32,33 +40,69 @@
             <section class="cart">
                 <h1>Cart</h1>
 
-                <div class="cart-item">
-                    <img src="img/img.png" alt="Item name" class="item-img">
+                <div class="cart-item" data-price="8">
+                    <img src="img/widegarfield.png" alt="Rounded Sitting Garfield" class="item-img">
                     <div class="item-info">
-                        <h2>Name</h2>
-                        <p>Short description of item</p>
-                        <p>Condition</p>
-                        <p class="price">Price $</p>
+                        <h2>Rounded Sitting Garfield</h2>
+                        <p>Condition: Fairly new</p>
+                        <p>★★☆☆☆</p>
+                        <p class="price">$8.00 USD</p>
+                        <button class="remove-btn" onclick="removeItem(this)">Remove</button>
                     </div>
                 </div>
 
-                <div class="cart-item">
-                    <img src="img/img.png" alt="Item name" class="item-img">
+                <div class="cart-item" data-price="10">
+                    <img src="img/heartgarfield.png" alt="Heart Garfield" class="item-img">
                     <div class="item-info">
-                        <h2>Name</h2>
-                        <p>Short description of item</p>
-                        <p>Condition</p>
-                        <p class="price">Price $</p>
+                        <h2>Heart Garfield</h2>
+                        <p>Condition: Good</p>
+                        <p>★★★★★</p>
+                        <p class="price">$10.00 USD</p>
+                        <button class="remove-btn" onclick="removeItem(this)">Remove</button>
                     </div>
                 </div>
 
-                <div class="cart-item">
-                    <img src="img/img.png" alt="Item name" class="item-img">
+                <div class="cart-item" data-price="20">
+                    <img src="img/tallgarfield.png" alt="9.5-inch Sitting Garfield" class="item-img">
                     <div class="item-info">
-                        <h2>Name</h2>
-                        <p>Short description of item</p>
-                        <p>Condition</p>
-                        <p class="price">Price $</p>
+                        <h2>9.5-inch Sitting Garfield</h2>
+                        <p>Condition: Fair</p>
+                        <p>★★★★☆</p>
+                        <p class="price">$20.00 USD</p>
+                        <button class="remove-btn" onclick="removeItem(this)">Remove</button>
+                    </div>
+                </div>
+
+                <div class="cart-item" data-price="20">
+                    <img src="img/smallgarfield.png" alt="5-inch Sitting Garfield" class="item-img">
+                    <div class="item-info">
+                        <h2>5-inch Sitting Garfield</h2>
+                        <p>Condition: Fairly new</p>
+                        <p>★★★★★</p>
+                        <p class="price">$20.00 USD</p>
+                        <button class="remove-btn" onclick="removeItem(this)">Remove</button>
+                    </div>
+                </div>
+
+                <div class="cart-item" data-price="45">
+                    <img src="img/boxergarfield.png" alt="Red Heart Boxers Garfield" class="item-img">
+                    <div class="item-info">
+                        <h2>Red Heart Boxers Garfield</h2>
+                        <p>Condition: Fairly new</p>
+                        <p>★★★★☆</p>
+                        <p class="price">$45.00 USD</p>
+                        <button class="remove-btn" onclick="removeItem(this)">Remove</button>
+                    </div>
+                </div>
+
+                <div class="cart-item" data-price="0">
+                    <img src="img/standinggarfield.png" alt="7-inch Standing Garfield" class="item-img">
+                    <div class="item-info">
+                        <h2>7-inch Standing Garfield</h2>
+                        <p>Condition: Fairly new</p>
+                        <p>★★★☆☆</p>
+                        <p class="price">FREE</p>
+                        <button class="remove-btn" onclick="removeItem(this)">Remove</button>
                     </div>
                 </div>
 
@@ -68,23 +112,25 @@
             <div class="sidebar">
 
                 <div class="info-box">
-                    <p>Lorem ipsum dolor sit amet...</p>
+                    <p><strong>Thanks for shopping at Re-Garfield!</strong><br>"It's not the giving. It's not the getting. It's the loving."<br><br><strong>Shipping:</strong> Dunno, but be patient<br><strong>Payment method:</strong> Minimum 4 trays of lasagna<br><strong>Address:</strong> 711 Maple Street</p>
                 </div>
 
                 <div class="promo-box">
                     <h3>Promo code</h3>
-                    <input type="text" class="promo-input">
-                    <button class="btn">Enter code</button>
+                    <input type="text" class="promo-input" id="promo-input">
+                    <button class="btn" id="promo-btn" onclick="applyPromo()">Enter code</button>
                 </div>
 
                 <div class="total-box">
-                    <h3>Cart total: $$$</h3>
-                    <button class="btn">Buy Now</button>
+                    <h3>Cart total: $<span id="cart-total">0.00</span> USD</h3>
+                    <button class="btn" id="buy-btn" onclick="buyNow()">Buy Now</button>
                 </div>
 
             </div>
 
-        </section>
+        </div>
 
-    </body>
+        <script src="cartjava.js"></script>
+
+        </body>
 </html>

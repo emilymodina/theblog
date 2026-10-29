@@ -111,9 +111,11 @@
     display: none;
     position: fixed;
     bottom: 80px;
-    left: 80px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     z-index: 100;
-    width: 300px;
+    width: 500px;
     padding: 20px;
     background-color: #F06B04;
     color: black;
@@ -197,6 +199,14 @@ h4{
 }
 
 .img-hover:hover .png{
+    opacity: 0%;
+}
+
+.img-hover:focus .gif{
+    opacity: 100%;
+}
+
+.img-hover:focus .png{
     opacity: 0%;
 }
 

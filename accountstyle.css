@@ -55,41 +55,39 @@
 /* ACCOUNT */
 
 .account-page {
-    padding: 2.6vw 3.9vw;
+    padding: 50px 75px;
 }
 
 .account-page h1 {
     font-family: KarlaBold;
-    font-size: 2.5vw;
-    margin: 0 0 2.1vw;
+    font-size: 48px;
+    margin: 0 0 40px;
 }
 
 /* 2 COLUMN GRID */
 .account-content {
     display: grid;
-    grid-template-columns: 13vw 26vw;
-    column-gap: 2.3vw;
+    grid-template-columns: 250px 500px;
+    column-gap: 45px;
     align-items: start;
 }
 
 /* LEFT SIDE GRID */
 
 .profile-img {
-    width: 13vw;
-    height: 13vw;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     display: block;
 }
 
 .profile h2 {
     font-family: GarfieldSans;
-    font-size: 1.25vw;
-    margin: 0.8vw 0 0;
+    margin: 15px 0 0;
 }
 
 .profile p {
     font-family: KarlaRegular;
-    font-size: max(13px, 0.85vw);
     margin: 0;
 }
 
@@ -97,14 +95,13 @@
 
 .details-box {
     background-color: #1570AC;
-    padding: 1vw;
-    min-height: 10.9vw;
+    padding: 20px;
+    min-height: 210px;
 }
 
 .details-box p {
     font-family: KarlaRegular;
-    font-size: max(13px, 0.85vw);
-    margin: 0 0 0.5vw;
+    margin: 0 0 10px;
     color: white;
 }
 
@@ -127,23 +124,23 @@
 #book{
     position: fixed;
     z-index: -2;
-    top: 30.7vw;
-    right: 15%;
+    top: 29.7vw;
+    right: 13%;
     max-height: 19.8vw;
 }
 
 #website{
     position: fixed;
     z-index: -2;
-    top: 27.2vw;
-    right: 22%;
+    top: 26.2vw;
+    right: 21%;
     max-height: 4.9vw;
 }
 
 #books{
     position: fixed;
     z-index: -3;
-    top: 13.4vw;
+    top: 12.4vw;
     right: -5%;
     max-height: 29.7vw;
 }
@@ -151,7 +148,7 @@
 #red{
     position: fixed;
     z-index: -4;
-    top: 2.5vw;
+    top: 4.5vw;
     right: 23%;
     max-height: 19.8vw;
 }
@@ -159,7 +156,16 @@
 #paper1{
     position: fixed;
     z-index: -5;
-    bottom: -7.4vw;
-    right: 25%;
+    bottom: -8.4vw;
+    right: 20%;
     max-height: 19.8vw;
+}
+
+#trickortreat{
+    position: fixed;
+    z-index: -6;
+    top: -4vw;
+    left: 0%;
+    max-width: 40vw;
+    opacity: 15%;
 }

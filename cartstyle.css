@@ -10,6 +10,24 @@
     src: url(fonts/GarfieldSans.ttf)
 }
 
+/* TYPE */
+
+h3{
+    font-family: KarlaRegular;
+}
+
+h2{
+    font-family: GarfieldSans;
+}
+
+p{
+    font-family: KarlaRegular;
+}
+
+button{
+    font-family: KarlaRegular
+}
+
 /* NAVIGATION */
 
 .navigation{
@@ -66,8 +84,9 @@
 
 .cart h1 {
     text-align: center;
-    font-size: 60px;
+    font-size: 48px;
     margin: 20px 0;
+    font-family: KarlaRegular
 }
 
 .cart-item {
@@ -83,7 +102,7 @@
 .item-img {
     width: 140px;
     height: 140px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .item-info h2 {
@@ -110,7 +129,7 @@
 .info-box,
 .promo-box,
 .total-box {
-    background-color: #efefef;
+    background-color: #F06B04;
     padding: 20px 30px;
 }
 
@@ -127,13 +146,74 @@
 .btn {
     width: 100%;
     padding: 8px;
-    background-color: #6b6b6b;
+    background-color: #1570AC;
     border: none;
     font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.remove-btn {
+    margin-top: 10px;
+    padding: 5px 15px;
+    background-color: #A1091E;
+    color: white;
+    border: none;
     cursor: pointer;
 }
 
 .total-box h3 {
     text-align: center;
     font-size: 28px;
+}
+
+/* IMGS */
+
+#slapsilly{
+    position: fixed;
+    z-index: -2;
+    top: 8vw;
+    right: 0%;
+    max-height: 17.6vw;
+}
+
+#sleepypookie{
+    position: fixed;
+    z-index: -2;
+    top: 25.6vw;
+    right: 0%;
+    max-height: 10.6vw;
+}
+
+#donut{
+    position: fixed;
+    z-index: -1;
+    top: 15vw;
+    left: 1%;
+    max-height: 10.6vw;
+}
+
+#paper2{
+    position: fixed;
+    z-index: -2;
+    bottom: -10vw;
+    right: 33%;
+    max-width: 100vw;
+    
+}
+
+#hatemondays{
+    position: fixed;
+    z-index: -1;
+    bottom: 2vw;
+    left: -3%;
+    max-width: 80vw;
+}
+
+#lasagna{
+    position: fixed;
+    z-index: -1;
+    top: 4vw;
+    right: 18%;
+    max-height: 7.6vw;
 }
